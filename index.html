@@ -1,0 +1,88 @@
+index.html
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>मेरा गांव ऐप डाउनलोड</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #f2f9f1;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        max-width: 500px;
+        margin: auto;
+        background: #ffffff;
+        padding: 20px;
+        margin-top: 20px;
+        border-radius: 12px;
+        box-shadow: 0 0 10px #c8e6c9;
+    }
+    h1 {
+        text-align: center;
+        color: #2e7d32;
+        margin-bottom: 10px;
+    }
+    .desc {
+        font-size: 16px;
+        line-height: 1.5;
+        color: #333;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .btn {
+        display: block;
+        width: 100%;
+        padding: 16px;
+        background: #2e7d32;
+        color: white;
+        text-align: center;
+        font-size: 20px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: bold;
+        margin: 15px 0;
+    }
+    .btn:hover {
+        background: #1b5e20;
+    }
+    .share-btn {
+        background: #25D366;
+    }
+    .share-btn:hover {
+        background: #1da851;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🚜 मेरा गांव ऐप</h1>
+
+    <p class="desc">
+        गांव में कृषि, पशु, ट्रैक्टर, मोबाइल, घरेलू सामान खरीद-बेचने का आसान ऐप।
+    </p>
+
+    <a href="https://yourdownloadlink.com" class="btn">
+        📥 APK डाउनलोड करें
+    </a>
+
+    <a id="shareBtn" class="btn share-btn">📤 WhatsApp पर शेयर करें</a>
+
+</div>
+
+<script>
+    document.getElementById("shareBtn").onclick = function () {
+        let text = `🚜 मेरा गांव ऐप\nगांव में खरीद-बेच के लिए आसान ऐप।\n\nडाउनलोड लिंक:\nhttps://yourdownloadlink.com`;
+        window.open("https://api.whatsapp.com/send?text=" + encodeURIComponent(text), "_blank");
+    }
+</script>
+
+</body>
+</html>
